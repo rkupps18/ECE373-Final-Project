@@ -44,4 +44,8 @@ public class Client {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public ArrayList<Reservation> getReservations() {
+		return reservations;
+	}
 }
