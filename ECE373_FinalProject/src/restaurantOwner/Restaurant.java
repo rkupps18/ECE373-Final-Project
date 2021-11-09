@@ -7,7 +7,7 @@ public class Restaurant {
 	//Fields
 	private String name;
 	private String location;
-	//private image menu; // How tf do you add an image?
+	//private image menu; // How tf do you add an image? Also missing getters and setters for this
 	private Owner restaurantOwner;
 	private ArrayList<Server> servers = new ArrayList<Server>();
 	private ArrayList<Table> tables = new ArrayList<Table>();
@@ -40,10 +40,26 @@ public class Restaurant {
 		this.restaurantOwner = restaurantOwner;
 	}
 
+	public void addServer(Server s1) {
+		//FIX ME
+	}
+	
+	public void removeServer(Server s1) {
+		//FIX ME
+	}
+	
 	public ArrayList<Server> getServers() {
 		return servers;
 	}
 
+	public void addTable(Table t1) {
+		//FIX ME
+	}
+	
+	public void removeTable(Table t1) {
+		//FIX ME
+	}
+	
 	public ArrayList<Table> getTables() {
 		return tables;
 	}
@@ -51,6 +67,18 @@ public class Restaurant {
 	public ArrayList<Reservation> getReservations() {
 		return reservations;
 	}	
+	
+	public Reservation searchReservation(Reservation r1) {
+		//FIX ME
+		//Return below added so it doesn't complain, but its still wrong
+		return new Reservation();
+	}
+	
+	public ArrayList<Reservation> checkTableReservations(Table t1){
+		//FIX ME
+		//Return below added so it doesn't complain, but its still wrong
+		return reservations;
+	}
 	
 
 }
