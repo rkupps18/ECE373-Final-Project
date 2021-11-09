@@ -23,6 +23,14 @@ public class Application {
 		return restaurants;
 	}
 	
+	public void addClient(Client c1) {
+		//FIX ME
+	}
+	
+	public void addOwner(Owner o1) {
+		//FIX ME
+	}
+	
 	
 	
 }
