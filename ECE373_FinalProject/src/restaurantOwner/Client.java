@@ -48,4 +48,17 @@ public class Client {
 	public ArrayList<Reservation> getReservations() {
 		return reservations;
 	}
+	
+	public void addReservation(Reservation r1) {
+		//FIX ME
+	}
+	
+	public void cancelReservation(Reservation r1) {
+		//FIX ME
+	}
+	
+	public boolean checkReservationConflict(Reservation r1) {
+		//FIX ME
+		return false;
+	}
 }
