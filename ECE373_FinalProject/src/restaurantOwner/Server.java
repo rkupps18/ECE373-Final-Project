@@ -21,5 +21,13 @@ public class Server {
 		public ArrayList<Table> getTablesAssigned() {
 			return tablesAssigned;
 		}
+		
+		public void addTable(Table t1) {
+			//FIX ME
+		}
+		
+		public void removeTable(Table t1) {
+			//FIX ME
+		}
 
 }
