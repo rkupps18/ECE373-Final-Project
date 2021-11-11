@@ -32,11 +32,16 @@ public class Table {
 	}
 	
 	public void addReservation(Reservation r1) {
-		//FIX ME
+		reservationsScheduled.add(r1);
 	}
 	
 	public void cancelReservation(Reservation r1) {
-		//FIX ME
+		if(reservationsScheduled.contains(r1)) {
+			reservationsScheduled.remove(r1);
+		}
+		else {
+			System.out.println("The reservation" + r1 + "is not scheduled in this table");
+		}
 	}
 	
 	public boolean checkReservationConflict(Reservation r1) {
