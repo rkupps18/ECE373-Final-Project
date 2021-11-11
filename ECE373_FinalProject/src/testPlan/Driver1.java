@@ -32,6 +32,12 @@ public class Driver1 {
 		thirdOwner.setPhone("5204312144");
 		thirdOwner.setPassword("floor123");
 		
+		
+		//Add Owners to application
+		ReservationsApp.addOwner(firstOwner);
+		ReservationsApp.addOwner(secondOwner);
+		ReservationsApp.addOwner(thirdOwner);
+		
 		//Print owners to test
 		System.out.println(firstOwner.toString());
 		System.out.println(secondOwner.toString());

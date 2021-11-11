@@ -32,5 +32,19 @@ public class Application {
 	}
 	
 	
+	public void printOwners() {
+		for(Owner owner: owners) {
+			System.out.println(owner.toString());
+		}
+	}
+	
+	public void printClients() {
+		for(Client client: clients) {
+			System.out.println(client.toString());
+		}
+	}
+	
+	
+	
 	
 }
