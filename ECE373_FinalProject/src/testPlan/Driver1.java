@@ -11,6 +11,36 @@ public class Driver1 {
 		Application ReservationsApp = new Application();
 		
 		
+		//Add restaurant owners to platform
+		Owner firstOwner = new Owner();
+		Owner secondOwner = new Owner();
+		Owner thirdOwner = new Owner();
+		
+		//Set owner fields
+		firstOwner.setName("Roberto Kupps");
+		firstOwner.setEmail("roberto@gmail.com");
+		firstOwner.setPhone("5204318765");
+		firstOwner.setPassword("boat123");
+		
+		secondOwner.setName("Justin Champagne");
+		secondOwner.setEmail("justin@gmail.com");
+		secondOwner.setPhone("5204318744");
+		secondOwner.setPassword("star123");
+		
+		thirdOwner.setName("Malcolm Blue");
+		thirdOwner.setEmail("malcolm@gmail.com");
+		thirdOwner.setPhone("5204312144");
+		thirdOwner.setPassword("floor123");
+		
+		//Print owners to test
+		firstOwner.toString();
+		secondOwner.toString();
+		thirdOwner.toString();
+		
+		
+		
+		
+		
 		
 		
 		

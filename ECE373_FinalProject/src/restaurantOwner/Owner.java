@@ -93,4 +93,9 @@ public class Owner {
 		return this.restaurantOwned.getReservations();
 		
 	}
+	
+	public String toString() {
+		String output = name + "/n" + email + "/n" + phone;
+		return output;
+	}
 }

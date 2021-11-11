@@ -44,6 +44,4 @@ public class Reservation {
 		this.clientReserved = clientReserved;
 	}
 	
-	
-	
 }
