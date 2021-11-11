@@ -23,11 +23,17 @@ public class Server {
 		}
 		
 		public void addTable(Table t1) {
-			//FIX ME
+			tablesAssigned.add(t1);
 		}
 		
 		public void removeTable(Table t1) {
-			//FIX ME
+			if(tablesAssigned.contains(t1)) {
+				tablesAssigned.contains(t1);
+			}
+			else {
+				System.out.println("The table" + t1 + "is not a table served by " + serverID);
+			}
 		}
-
+		
+		
 }
