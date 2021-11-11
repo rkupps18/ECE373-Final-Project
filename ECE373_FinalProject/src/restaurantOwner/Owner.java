@@ -2,6 +2,7 @@ package restaurantOwner;
 
 import java.util.ArrayList;
 
+
 public class Owner {
 	
 	//Fields
@@ -55,19 +56,24 @@ public class Owner {
 	}
 	
 	public void addServer(Server s1) {
-		//FIX ME
+		this.restaurantOwned.addServer(s1);
+		//Is this correct?
+		
 	}
 	
 	public void removeServer(Server s1) {
-		//FIX ME
+		this.restaurantOwned.removeServer(s1);
+		//Is this correct?
 	}
 	
 	public void addTable(Table t1) {
-		//FIX ME
+		this.restaurantOwned.addTable(t1);
+		//Is this correct?
 	}
 	
 	public void removeTable(Table t1) {
-		//FIX ME
+		this.restaurantOwned.removeTable(t1);
+		//Is this correct?
 	}
 	
 	public Reservation searchReservation(Reservation r1) {
