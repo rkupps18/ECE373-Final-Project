@@ -24,11 +24,11 @@ public class Application {
 	}
 	
 	public void addClient(Client c1) {
-		//FIX ME
+		clients.add(c1);
 	}
 	
 	public void addOwner(Owner o1) {
-		//FIX ME
+		owners.add(o1);
 	}
 	
 	
