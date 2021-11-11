@@ -41,11 +41,17 @@ public class Restaurant {
 	}
 
 	public void addServer(Server s1) {
-		//FIX ME
+		servers.add(s1);
+		//is this correct?
 	}
 	
 	public void removeServer(Server s1) {
-		//FIX ME
+		if(servers.contains(s1)) {
+			servers.remove(s1);
+		}
+		else {
+			System.out.println("The server" + s1 + "is not a server here");
+		}
 	}
 	
 	public ArrayList<Server> getServers() {
@@ -53,11 +59,16 @@ public class Restaurant {
 	}
 
 	public void addTable(Table t1) {
-		//FIX ME
+		tables.add(t1);
 	}
 	
 	public void removeTable(Table t1) {
-		//FIX ME
+		if(tables.contains(t1)) {
+			tables.remove(t1);
+		}
+		else {
+			System.out.println("The table" + t1 + "is not a table here");
+		}
 	}
 	
 	public ArrayList<Table> getTables() {
