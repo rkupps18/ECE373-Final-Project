@@ -50,11 +50,16 @@ public class Client {
 	}
 	
 	public void addReservation(Reservation r1) {
-		//FIX ME
+		reservations.add(r1);
 	}
 	
 	public void cancelReservation(Reservation r1) {
-		//FIX ME
+		if(reservations.contains(r1)) {
+			reservations.remove(r1);
+		}
+		else {
+			System.out.println("The table" + r1 + "is not a table here");
+		}
 	}
 	
 	public boolean checkReservationConflict(Reservation r1) {

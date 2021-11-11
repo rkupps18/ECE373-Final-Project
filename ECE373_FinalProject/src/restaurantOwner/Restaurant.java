@@ -79,6 +79,24 @@ public class Restaurant {
 		return reservations;
 	}	
 	
+	public void addReservation(Reservation r1) {
+		reservations.add(r1);
+	}
+	
+	public void removeReservation(Reservation r1) {
+		if(reservations.contains(r1)) {
+			reservations.remove(r1);
+		}
+		else {
+			System.out.println("The reservation" + r1 + "is not a resrvation here");
+		}
+	}
+	
+	public boolean checkReservationConflict(Reservation r1) {
+		//FIX ME
+		return false;
+	}
+	
 	public Reservation searchReservation(Reservation r1) {
 		//FIX ME
 		//Return below added so it doesn't complain, but its still wrong
