@@ -33,12 +33,9 @@ public class Driver1 {
 		thirdOwner.setPassword("floor123");
 		
 		//Print owners to test
-		firstOwner.toString();
-		secondOwner.toString();
-		thirdOwner.toString();
-		
-		
-		
+		System.out.println(firstOwner.toString());
+		System.out.println(secondOwner.toString());
+		System.out.println(thirdOwner.toString());
 		
 		
 		

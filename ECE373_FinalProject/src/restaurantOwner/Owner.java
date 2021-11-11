@@ -95,7 +95,7 @@ public class Owner {
 	}
 	
 	public String toString() {
-		String output = name + "/n" + email + "/n" + phone;
+		String output = name + "\n" + email + "\n" + phone + "\n";
 		return output;
 	}
 }
