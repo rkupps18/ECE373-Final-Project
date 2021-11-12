@@ -66,4 +66,11 @@ public class Client {
 		//FIX ME
 		return false;
 	}
+	
+	public String toString() {
+		String output = name + "\n" + email + "\n" + phone + "\n";
+		return output;
+	}
+	
+	
 }

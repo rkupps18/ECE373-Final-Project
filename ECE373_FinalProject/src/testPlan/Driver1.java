@@ -1,6 +1,7 @@
 package testPlan;
 
 import restaurantOwner.Application;
+import restaurantOwner.Client;
 import restaurantOwner.Owner;
 import restaurantOwner.Restaurant;
 
@@ -71,6 +72,36 @@ public class Driver1 {
 		ReservationsApp.printRestaurants();
 		
 		
+		
+		//Add clients to platform
+		Client firstClient = new Client();
+		Client secondClient = new Client();
+		Client thirdClient = new Client();
+		
+		//Set Client Fields
+		firstClient.setName("Daniel Johnson");
+		firstClient.setEmail("daniel@gmail.com");
+		firstClient.setPhone("5203568743");
+		firstClient.setPassword("play123");
+		
+		secondClient.setName("Abraham Lincoln");
+		secondClient.setEmail("abraham@gmail.com");
+		secondClient.setPhone("5203228743");
+		secondClient.setPassword("sing123");
+		
+		thirdClient.setName("Alex Stevens");
+		thirdClient.setEmail("alex@gmail.com");
+		thirdClient.setPhone("5203525367");
+		thirdClient.setPassword("stay123");
+		
+		//Add Owners to application
+		ReservationsApp.addClient(firstClient);
+		ReservationsApp.addClient(secondClient);
+		ReservationsApp.addClient(thirdClient);
+		
+		//Print clients to test
+		System.out.println("Clients:" + "\n");
+		ReservationsApp.printClients();
 		
 		
 		
