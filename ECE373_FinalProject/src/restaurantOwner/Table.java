@@ -8,6 +8,7 @@ public class Table {
 	private int tableNumber;
 	private int tableCapacity;
 	private ArrayList<Reservation> reservationsScheduled = new ArrayList<Reservation>();
+	private Restaurant tableAt;
 	
 	
 	//Methods
@@ -16,6 +17,8 @@ public class Table {
 	}
 	
 	public void setTableNumber(int tableNumber) {
+		
+		//FIXME: This number must be unique for each table at a restaurant. Add a check.
 		this.tableNumber = tableNumber;
 	}
 
@@ -47,6 +50,19 @@ public class Table {
 	public boolean checkReservationConflict(Reservation r1) {
 		//FIX ME
 		return false;
+	}
+
+	public Restaurant getTableAt() {
+		return tableAt;
+	}
+
+	public void setTableAt(Restaurant tableAt) {
+		this.tableAt = tableAt;
+	}
+	
+	public String toString() {
+		String output = "Table " + tableNumber + " is for " + tableCapacity + " and is at " + this.getTableAt().getName();
+		return output;
 	}
 	
 	

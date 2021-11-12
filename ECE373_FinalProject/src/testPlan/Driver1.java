@@ -4,12 +4,16 @@ import restaurantOwner.Application;
 import restaurantOwner.Client;
 import restaurantOwner.Owner;
 import restaurantOwner.Restaurant;
+import restaurantOwner.Table;
 
 public class Driver1 {
 	public static void main(String[] args) 
 	{
 		//Initialize the
 		Application ReservationsApp = new Application();
+		
+		
+		
 		
 		
 		//Add restaurant owners to platform
@@ -44,6 +48,12 @@ public class Driver1 {
 		ReservationsApp.printOwners();
 		
 		
+		
+		
+		
+		
+		
+		
 		//Add Restaurants to platform
 		Restaurant firstRestaurant = new Restaurant();
 		Restaurant secondRestaurant = new Restaurant();
@@ -70,6 +80,10 @@ public class Driver1 {
 		//print Restaurants to test
 		System.out.println("Restaurants:" + "\n");
 		ReservationsApp.printRestaurants();
+		
+		
+		
+		
 		
 		
 		
@@ -104,6 +118,81 @@ public class Driver1 {
 		ReservationsApp.printClients();
 		
 		
+		
+		
+		
+		
+		
+		
+		//Add Tables to each Restaurant
+		Table t1r1 = new Table();
+		Table t2r1 = new Table();
+		Table t3r1 = new Table();
+		Table t4r1 = new Table();
+		
+		Table t1r2 = new Table();
+		Table t2r2 = new Table();
+		Table t3r2 = new Table();
+		Table t4r2 = new Table();
+		
+		Table t1r3 = new Table();
+		Table t2r3 = new Table();
+		Table t3r3 = new Table();
+		Table t4r3 = new Table();
+		
+		
+		//Set Table fields
+		t1r1.setTableCapacity(10);
+		t1r1.setTableNumber(1);
+		t2r1.setTableCapacity(8);
+		t2r1.setTableNumber(2);
+		t3r1.setTableCapacity(5);
+		t3r1.setTableNumber(3);
+		t4r1.setTableCapacity(2);
+		t4r1.setTableNumber(4);
+		
+		t1r2.setTableCapacity(10);
+		t1r2.setTableNumber(1);
+		t2r2.setTableCapacity(8);
+		t2r2.setTableNumber(2);
+		t3r2.setTableCapacity(5);
+		t3r2.setTableNumber(3);
+		t4r2.setTableCapacity(2);
+		t4r2.setTableNumber(4);
+		
+		t1r3.setTableCapacity(10);
+		t1r3.setTableNumber(1);
+		t2r3.setTableCapacity(8);
+		t2r3.setTableNumber(2);
+		t3r3.setTableCapacity(5);
+		t3r3.setTableNumber(3);
+		t4r3.setTableCapacity(2);
+		t4r3.setTableNumber(4);
+		
+		//addTables to Restaurant
+		firstRestaurant.addTable(t1r1);
+		firstRestaurant.addTable(t2r1);
+		firstRestaurant.addTable(t3r1);
+		firstRestaurant.addTable(t4r1);
+		
+		secondRestaurant.addTable(t1r2);
+		secondRestaurant.addTable(t2r2);
+		secondRestaurant.addTable(t3r2);
+		secondRestaurant.addTable(t4r2);
+		
+		thirdRestaurant.addTable(t1r3);
+		thirdRestaurant.addTable(t2r3);
+		thirdRestaurant.addTable(t3r3);
+		thirdRestaurant.addTable(t4r3);
+		
+		//Print tables to test
+		System.out.println("Tables:" + "\n");
+		firstRestaurant.printTables();
+		System.out.println("\n");
+		secondRestaurant.printTables();
+		System.out.println("\n");
+		thirdRestaurant.printTables();
+		System.out.println("\n");
 		
 		
 		

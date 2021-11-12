@@ -61,6 +61,7 @@ public class Restaurant {
 
 	public void addTable(Table t1) {
 		tables.add(t1);
+		t1.setTableAt(this);
 	}
 	
 	public void removeTable(Table t1) {
@@ -113,6 +114,12 @@ public class Restaurant {
 	public String toString() {
 		String output = name + "\n" + location + "\n" + "owner: " + this.getRestaurantOwner().getName() + "\n";
 		return output;
+	}
+	
+	public void printTables() {
+		for(Table table: tables) {
+			System.out.println(table.toString());
+		}
 	}
 	
 
