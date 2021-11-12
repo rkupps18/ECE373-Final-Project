@@ -4,6 +4,7 @@ import restaurantOwner.Application;
 import restaurantOwner.Client;
 import restaurantOwner.Owner;
 import restaurantOwner.Restaurant;
+import restaurantOwner.Server;
 import restaurantOwner.Table;
 
 public class Driver1 {
@@ -194,6 +195,63 @@ public class Driver1 {
 		thirdRestaurant.printTables();
 		System.out.println("\n");
 		
+		
+		
+		
+		
+		
+		
+		//Add Servers to platform
+		Server robot1r1 = new Server();
+		Server robot2r1 = new Server();
+		
+		Server robot1r2 = new Server();
+		Server robot2r2 = new Server();
+		
+		Server robot1r3 = new Server();
+		Server robot2r3 = new Server();
+		
+		//Set server fields
+		robot1r1.setServerID(1);
+		robot2r1.setServerID(2);
+		
+		robot1r2.setServerID(1);
+		robot2r2.setServerID(2);
+		
+		robot1r3.setServerID(1);
+		robot2r3.setServerID(2);
+		
+		//Assign Servers to Table
+		robot1r1.addTable(t1r1);
+		robot1r1.addTable(t2r1);
+		robot2r1.addTable(t3r1);
+		robot2r1.addTable(t4r1);
+		
+		robot1r2.addTable(t1r2);
+		robot1r2.addTable(t2r2);
+		robot2r2.addTable(t3r2);
+		robot2r2.addTable(t4r2);
+		
+		robot1r3.addTable(t1r3);
+		robot1r3.addTable(t2r3);
+		robot2r3.addTable(t3r3);
+		robot2r3.addTable(t4r3);
+		
+		//Add Server to Restaurant
+		firstRestaurant.addServer(robot1r1);
+		firstRestaurant.addServer(robot2r1);
+		
+		secondRestaurant.addServer(robot1r2);
+		secondRestaurant.addServer(robot2r2);
+		
+		thirdRestaurant.addServer(robot1r3);
+		thirdRestaurant.addServer(robot2r3);
+		
+		//Print servers to test
+		System.out.println("Tables:" + "\n");
+		firstRestaurant.printServers();
+		secondRestaurant.printServers();
+		thirdRestaurant.printServers();
 		
 		
 	}

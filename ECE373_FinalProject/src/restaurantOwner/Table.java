@@ -9,6 +9,7 @@ public class Table {
 	private int tableCapacity;
 	private ArrayList<Reservation> reservationsScheduled = new ArrayList<Reservation>();
 	private Restaurant tableAt;
+	private Server serverAssigned;
 	
 	
 	//Methods
@@ -63,6 +64,14 @@ public class Table {
 	public String toString() {
 		String output = "Table " + tableNumber + " is for " + tableCapacity + " and is at " + this.getTableAt().getName();
 		return output;
+	}
+
+	public Server getServerAssigned() {
+		return serverAssigned;
+	}
+
+	public void setServerAssigned(Server serverAssigned) {
+		this.serverAssigned = serverAssigned;
 	}
 	
 	

@@ -43,6 +43,7 @@ public class Restaurant {
 
 	public void addServer(Server s1) {
 		servers.add(s1);
+		s1.setWorksAt(this);
 		//is this correct?
 	}
 	
@@ -122,5 +123,10 @@ public class Restaurant {
 		}
 	}
 	
+	public void printServers() {
+		for(Server server: servers) {
+			System.out.println(server.toString());
+		}
+	}
 
 }
