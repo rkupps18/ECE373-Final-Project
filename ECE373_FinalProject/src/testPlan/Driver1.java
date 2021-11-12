@@ -1,8 +1,8 @@
 package testPlan;
 
 import restaurantOwner.Application;
-
 import restaurantOwner.Owner;
+import restaurantOwner.Restaurant;
 
 public class Driver1 {
 	public static void main(String[] args) 
@@ -39,10 +39,36 @@ public class Driver1 {
 		ReservationsApp.addOwner(thirdOwner);
 		
 		//Print owners to test
-		System.out.println(firstOwner.toString());
-		System.out.println(secondOwner.toString());
-		System.out.println(thirdOwner.toString());
+		System.out.println("Owners:" + "\n");
+		ReservationsApp.printOwners();
 		
+		
+		//Add Restaurants to platform
+		Restaurant firstRestaurant = new Restaurant();
+		Restaurant secondRestaurant = new Restaurant();
+		Restaurant thirdRestaurant = new Restaurant();
+		
+		//Set Restaurant fields
+		firstRestaurant.setName("Roberto's Restaurant");
+		firstRestaurant.setLocation("1809 N Park Ave");
+		firstRestaurant.setRestaurantOwner(firstOwner);
+		
+		secondRestaurant.setName("Justin's Restaurant");
+		secondRestaurant.setLocation("1701 N Park Ave");
+		secondRestaurant.setRestaurantOwner(secondOwner);
+		
+		thirdRestaurant.setName("Malcolm's Restaurant");
+		thirdRestaurant.setLocation("1654 N Park Ave");
+		thirdRestaurant.setRestaurantOwner(thirdOwner);
+		
+		//Add Restaurants to Application
+		ReservationsApp.addRestaurant(firstRestaurant);
+		ReservationsApp.addRestaurant(secondRestaurant);
+		ReservationsApp.addRestaurant(thirdRestaurant);
+		
+		//print Restaurants to test
+		System.out.println("Restaurants:" + "\n");
+		ReservationsApp.printRestaurants();
 		
 		
 		

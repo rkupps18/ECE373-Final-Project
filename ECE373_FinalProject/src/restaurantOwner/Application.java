@@ -31,6 +31,10 @@ public class Application {
 		owners.add(o1);
 	}
 	
+	public void addRestaurant(Restaurant r1) {
+		restaurants.add(r1);
+	}
+	
 	
 	public void printOwners() {
 		for(Owner owner: owners) {
@@ -41,6 +45,12 @@ public class Application {
 	public void printClients() {
 		for(Client client: clients) {
 			System.out.println(client.toString());
+		}
+	}
+	
+	public void printRestaurants() {
+		for(Restaurant restaurant: restaurants) {
+			System.out.println(restaurant.toString());
 		}
 	}
 	

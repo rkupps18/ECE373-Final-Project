@@ -38,6 +38,7 @@ public class Restaurant {
 
 	public void setRestaurantOwner(Owner restaurantOwner) {
 		this.restaurantOwner = restaurantOwner;
+		restaurantOwner.setRestaurantOwned(this);
 	}
 
 	public void addServer(Server s1) {
@@ -107,6 +108,11 @@ public class Restaurant {
 		//FIX ME
 		//Return below added so it doesn't complain, but its still wrong
 		return reservations;
+	}
+	
+	public String toString() {
+		String output = name + "\n" + location + "\n" + "owner: " + this.getRestaurantOwner().getName() + "\n";
+		return output;
 	}
 	
 
